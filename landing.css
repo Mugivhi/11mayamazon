@@ -1,0 +1,645 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap');
+@media only screen and (min-width : 480px) {
+    .mainDiv{
+        background-color: rgb(214, 71, 71);
+    }
+
+
+}
+
+@media only screen and (min-width : 1200px) {
+.mainDiv{
+    background-color: white;
+}
+.topestnav{
+    position: relative;
+    left: 130px;
+    bottom: 310px;
+    width:80% ;
+}
+.outPic{
+    position: relative;
+    bottom: -1rem;
+ margin-left:-10px;
+ background-color: rgb(218,205, 187);
+ width: 10%;
+ height: 20rem;
+ border-bottom-right-radius: 10%;
+ border-top-right-radius: 10%;
+ align-items: center;
+ text-align: center;
+}
+.wel{
+    position: relative;
+    bottom: -2rem;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 5px;
+    
+}
+.pic img{
+    height: 6rem;
+    width: 50%;
+    border-radius: 40%;
+    margin-left: 5px;
+    margin-top: 40px;
+}
+.kindle{
+    position: absolute;
+    left: 100px;
+    top: 10px;
+   
+}
+.search button{
+    position: absolute;
+    left: 760px;
+    top:8px;
+    color: blue;
+    float: right;
+    height: 1px;
+    padding: 5px 1px;
+    margin-right: 1px;
+    font-size: 1px;
+   background-color: transparent;
+    cursor: pointer;
+    border: none;
+} 
+.search input[type=text]{
+    position: absolute;
+    left: 500px;
+    top: 5px;
+    width:300px;
+    height:30px;
+    border-radius:25px;
+}
+.search{
+    position: absolute;
+    left: 30rem;
+}
+.kndlimg{
+    position: absolute;
+    margin: -10rem;
+    left: 700px;
+    text-align: center;
+    align-items: center;
+    border-collapse: separate;
+    border-spacing: 15 0px;
+}
+#ftured{
+    position: absolute;
+    left: 57rem;
+    top: 2px;
+    width: 4rem;
+    
+}
+#newrel{
+    position: absolute;
+    left: 52rem;
+    top: 2px;
+    width: 4rem;
+    
+}
+#dot{
+    position: relative;
+}
+.dotOne{
+    position: absolute;
+    background-color: black;
+    width: 3px;
+    height: 3px;
+    top:6px;
+    left: 100px;
+    border-radius: 50%;
+}
+.dotTwo{
+    position: absolute;
+    background-color: black;
+    width: 3px;
+    height: 3px;
+    top:-6px;
+    left: 110px;
+    border-radius: 50%;
+}
+.dotThree{
+    position: absolute;
+    background-color: black;
+    width: 3px;
+    height: 3px;
+    top:6px;
+    left: 110px;
+    border-radius: 50%;
+}
+.lstred{
+    position: absolute;
+}
+.dotFour{
+    position: absolute;
+    background-color: black;
+    width: 3px;
+    height: 3px;
+    top:-6px;
+    left: 100px;
+    border-radius: 50%;
+}
+.orangeDot{
+    position: absolute;
+    background-color: orange;
+    width: 3px;
+    height: 3px;
+    top:-8px;
+    left: -75px;
+    border-radius: 50%;
+}
+.wraper{
+    position: relative;
+    width: 15%;
+    height: fit-content;
+    margin-left: -20px;
+}
+.authors{
+    position: relative;
+    left: 75rem;
+    bottom: 750px;
+    align-items: center;
+    margin-left:300px;
+    background-color: silver;
+    width: 13%;
+    height: 25rem;
+    border-bottom-left-radius: 10%;
+    border-top-left-radius: 10%;
+    align-items: center;
+    text-align: center;
+
+}
+.authors img{
+    top: 30px;
+    border-radius: 50%;
+    padding: 10px;
+}
+.recent img{
+    border-bottom-left-radius: 10%;
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    border-top-right-radius: 10%;
+}
+#subtittle{
+    color: grey;
+    text-size-adjust: 2px;
+}
+.boku{
+    position: relative;
+    bottom: 1px;
+    left: 50px;
+}
+.recent{
+     
+    position: relative;
+    bottom: 650px;
+    left: 10rem;
+    width: 50%;
+    padding: 10px;
+    height: 10vh;
+   
+    
+}
+
+.bton{
+    align-items: center;
+    position: relative;
+    
+}
+/*.book1{
+    position: relative;
+    left: 18rem;
+    bottom: 15rem;
+    height:7rem;
+    width: 30rem;
+    background-color: bisque;
+    border-radius: 40px;
+    text-align: center;
+}*/
+
+#rk{
+    position: absolute;
+    left: 35px;
+    top: 7rem;
+}
+#kndlebrd{
+    position: absolute;
+    left: 55px;
+    top: 5rem;
+} 
+#thecol{
+    position: absolute;
+    top:10rem;
+}
+#thelog{
+    position: absolute;
+    top:20rem;
+}
+#theprof{
+    position: absolute;
+    top:17rem;
+}
+#thesaved{
+    position: absolute;
+    top:13rem;
+}
+#product{
+    position: absolute;
+    top:49rem;
+}
+#prodimg{
+    position: absolute;
+    top:50rem;
+}
+.cover{
+height: 18rem;
+width: 80%;
+display: flex;
+flex-grow: inherit;
+overflow-y: hidden;
+overscroll-behavior: smooth;
+position: relative;
+top: -35rem;
+left: 14rem;
+margin-top: 4rem;
+margin-bottom: 4rem;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 40px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: blue;
+    border-radius: 40px; 
+
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: grey; 
+  }
+/*books*/
+#book1{
+    background-color: burlywood;
+    border-radius: 30px;
+    height: 6rem;
+    width: 20rem;
+    position: absolute;
+    left: 0rem;
+    bottom: 3rem;
+    margin-right: 6rem;
+    
+}
+#textB1{
+    position: absolute;
+    left: 10rem;
+    bottom: -10rem;
+
+}
+#textB1 p{
+    background-color: transparent;
+}
+
+#imgp1{
+    position: relative;
+    left: -8rem;
+    bottom: 10rem;
+    
+    
+}
+#imgp1 img{
+    border-radius: 10px;
+}
+/*end of book1 edit*/
+#book2{
+    background-color: red;
+    border-radius: 30px;
+    height: 6rem;
+    width: 20rem;
+    position: absolute;
+    left: 30rem;
+    bottom: 3rem;
+    margin-right: 6rem;
+}
+#textB2{
+    position: relative;
+    left: 10rem;
+    bottom: -6px;
+
+}
+#textB2 p{
+    background-color: transparent;
+}
+
+#imgp2{
+    position: relative;
+    left: -8rem;
+    bottom: 10rem;
+    
+    
+}
+#imgp2 img{
+    border-radius: 10px;
+}
+/*book3*/
+#book3{
+    background-color: #532637;
+    border-radius: 30px;
+    height: 6rem;
+    width: 20rem;
+    position: absolute;
+    left: 60rem;
+    bottom: 3rem;
+    margin-right: 6rem;
+}
+#textB3{
+    position: relative;
+    left: 10rem;
+    bottom: -6px;
+
+}
+#textB3 p{
+    background-color: transparent;
+}
+
+#imgp3{
+    position: relative;
+    left: -8rem;
+    bottom: 10rem;
+    
+    
+}
+#imgp3 img{
+    border-radius: 10px;
+}
+/*end*/
+/*book4*/
+#book4{
+    background-color:#F7ECA8;
+    border-radius: 30px;
+    height: 6rem;
+    width:20rem;
+    position: absolute;
+    left: 90rem;
+    bottom: 3rem;
+    margin-right: 6rem;
+}
+#textB4{
+    position: relative;
+    left: 10rem;
+    bottom: -6px;
+
+}
+#textB4 p{
+    background-color: transparent;
+}
+
+#imgp4{
+    position: relative;
+    left: -8rem;
+    bottom: 10rem;
+    
+    
+}
+#imgp4 img{
+    border-radius: 10px;
+}
+/*end*/
+/*book5*/
+#book5{
+    background-color:#EFECE5;
+    border-radius: 30px;
+    height: 6rem;
+    width: 20rem;
+    position: absolute;
+    left: 120rem;
+    bottom: 3rem;
+    margin-right: 6rem;
+}
+#textB5{
+    position: relative;
+    left: 10rem;
+    bottom: -6px;
+
+}
+#textB5 p{
+    background-color: transparent;
+}
+
+#imgp5{
+    position: relative;
+    left: -8rem;
+    bottom: 10rem;
+    
+    
+}
+#imgp5 img{
+    border-radius: 10px;
+}
+/*end*/
+/*book6*/
+#book6{
+    background-color:#13153B;
+    border-radius: 30px;
+    height: 6rem;
+    width: 20rem;
+    position: absolute;
+    left: 150rem;
+    bottom: 3rem;
+    margin-right: 6rem;
+}
+#textB6{
+    position: relative;
+    left: 10rem;
+    bottom: -6px;
+
+}
+#textB6 p{
+    background-color: transparent;
+}
+
+#imgp6{
+    position: relative;
+    left: -8rem;
+    bottom: 10rem;
+    
+    
+}
+#imgp6 img{
+    border-radius: 10px;
+}
+/*end*/
+/*book7*/
+#book7{
+    background-color: #F4C150;
+    border-radius: 30px;
+    height: 6rem;
+    width: 20rem;
+    position: absolute;
+    left: 180rem;
+    bottom: 3rem;
+    margin-right: 6rem;
+}
+#textB7{
+    position: relative;
+    left: 10rem;
+    bottom: -6px;
+
+}
+#textB7 p{
+    background-color: transparent;
+}
+
+#imgp7{
+    position: relative;
+    left: -8rem;
+    bottom: 10rem;
+    
+    
+}
+#imgp7 img{
+    border-radius: 10px;
+}
+/*end book7*/
+/*book8*/
+#book8{
+    background-color: #75A7A4;
+    border-radius: 30px;
+    height: 6rem;
+    width: 20rem;
+    position:absolute;
+    left: 210rem;
+    bottom: 3rem;
+    margin-right: 6rem;
+}
+#textB8{
+    position: relative;
+    left: 10rem;
+    bottom: -6px;
+
+}
+#textB8 p{
+    background-color: transparent;
+}
+
+#imgp8{
+    position: relative;
+    left: -8rem;
+    bottom: 10rem;
+    
+    
+}
+#imgp8 img{
+    border-radius: 10px;
+}
+/*end book8*/
+/*book9*/
+#book9{
+    background-color: #821D0C;
+    border-radius: 30px;
+    height: 6rem;
+    width: 20rem;
+    position: absolute;
+    left: 240rem;
+    bottom: 3rem;
+    margin-right: 6rem;
+}
+#textB9{
+    position: relative;
+    left: 10rem;
+    bottom: -6px;
+
+}
+#textB9 p{
+    background-color: transparent;
+}
+
+#imgp9{
+    position: relative;
+    left: -8rem;
+    bottom: 10rem;
+    
+    
+}
+#imgp9 img{
+    border-radius: 10px;
+}
+/*end book9*/
+/*book10*/
+#book10{
+    background-color: #3B446F;
+    border-radius: 30px;
+    height: 6rem;
+    width:20rem;
+    position: absolute;
+    left: 270rem;
+    bottom: 3rem;
+}
+#textB10{
+    position: relative;
+    left: 10rem;
+    bottom: -6px;
+
+}
+#textB10 p{
+    background-color: transparent;
+}
+
+#imgp10{
+    position: relative;
+    left: -8rem;
+    bottom: 10rem;
+    
+    
+    
+}
+#imgp10 img{
+    border-radius: 10px;
+   
+}
+#td1 p{
+   background-color: silver;
+   border-radius: 45px;
+    width: 30%;
+    text-align: center;
+}
+#td2 p{
+    background-color: silver;
+    border-radius: 45px;
+    width: 30%;
+    text-align: center;
+ }
+ #td3 p{
+    background-color: silver;
+    border-radius: 45px;
+    width: 30%;
+    text-align: center;
+ }
+ #td4 p{
+    background-color: silver;
+    border-radius: 45px;
+    width: 30%;
+    text-align: center;
+ }
+ #td5 p{
+    background-color: silver;
+    border-radius: 45px;
+    width: 30%;
+    text-align: center;
+ }
+ #left{
+     position: absolute;
+     left: 2rem;
+    
+ }
+}
