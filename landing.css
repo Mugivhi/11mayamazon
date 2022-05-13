@@ -17,8 +17,14 @@
 }
 
 @media only screen and (min-width : 1200px) {
+    body{
+        height: 60rem;
+        width: 118rem;
+        align-items: center;
+    }
 .mainDiv{
     background-color:#faf8f4;
+
 }
 .topestnav{
     position: relative;
@@ -333,10 +339,10 @@
     overflow: hidden;
 }
 .horizontal-scroll .btn-scroll{
-    background-color: #fff;
-    color: #999;
-    box-shadow:0 0 10px #999 ;
-    padding: 5px 8px;
+    background-color: white;
+    color:#9fa2a9;
+    box-shadow:0 0 1px white ;
+    padding: 8px 11px;
     border: 0;
     border-radius: 50%;
     margin: 0 5px;
@@ -790,4 +796,4 @@
 .wordsb10 h4{
     color: white;
 }
-/*end*/
+}
