@@ -210,7 +210,7 @@
 .recent{
      
     position: relative;
-    bottom: 650px;
+    bottom: 700px;
     left: 10rem;
     width: 50%;
     padding: 10px;
@@ -252,19 +252,19 @@
 } 
 #thecol{
     position: absolute;
-    top:10rem;
+    top:12rem;
 }
 #thelog{
     position: absolute;
-    top:20rem;
+    top:24rem;
 }
 #theprof{
     position: absolute;
-    top:17rem;
+    top:20rem;
 }
 #thesaved{
     position: absolute;
-    top:13rem;
+    top:16rem;
 }
 #product{
     position: absolute;
@@ -735,8 +735,8 @@ margin-bottom: 4rem;
     margin-right: 20rem;
 }
 .story-circle img{
-    width: 80px;
-    height: 8rem;
+    width: 100px;
+    height: 10rem;
     border-radius: 10px;
    
      
@@ -744,8 +744,8 @@ margin-bottom: 4rem;
 .colorb1{
     position: absolute;
     background-color: red;
-    height:6rem;
-    width: 18rem;
+    height:8rem;
+    width: 20rem;
     border-radius: 10px;
     left: 3rem;
 }
@@ -770,8 +770,8 @@ margin-bottom: 4rem;
 .colorb2{
     position: absolute;
     background-color:#bf5b41;
-    height:6rem;
-    width: 18rem;
+    height:8rem;
+    width: 20rem;
     border-radius: 10px;
     left: 25rem;
 }
@@ -786,8 +786,8 @@ margin-bottom: 4rem;
     margin-right: 20rem;
 }
 .story-circle1 img{
-    width: 80px;
-    height: 8rem;
+    width: 100px;
+    height: 10rem;
     border-radius: 10px;
    
      
@@ -814,8 +814,8 @@ margin-bottom: 4rem;
 .colorb3{
     position: absolute;
     background-color:#6b2117;
-    height:6rem;
-    width: 18rem;
+    height:8rem;
+    width: 20rem;
     border-radius: 10px;
     left: 47rem;
 }
@@ -830,8 +830,8 @@ margin-bottom: 4rem;
     margin-right: 20rem;
 }
 .story-circle2 img{
-    width: 80px;
-    height: 8rem;
+    width: 100px;
+    height: 10rem;
     border-radius: 10px;
    
      
@@ -858,8 +858,8 @@ margin-bottom: 4rem;
 .colorb4{
     position: absolute;
     background-color: #411024;
-    height:6rem;
-    width: 18rem;
+    height:8rem;
+    width: 20rem;
     border-radius: 10px;
     left: 69rem;
 }
@@ -874,8 +874,8 @@ margin-bottom: 4rem;
     margin-right: 20rem;
 }
 .story-circle3 img{
-    width: 80px;
-    height: 8rem;
+    width: 100px;
+    height: 10rem;
     border-radius: 10px;
    
      
@@ -902,8 +902,8 @@ margin-bottom: 4rem;
 .colorb5{
     position: absolute;
     background-color: #f1e6a0;
-    height:6rem;
-    width: 18rem;
+    height:8rem;
+    width: 20rem;
     border-radius: 10px;
     left: 91rem;
 }
@@ -918,8 +918,8 @@ margin-bottom: 4rem;
     margin-right: 20rem;
 }
 .story-circle4 img{
-    width: 80px;
-    height: 8rem;
+    width: 100px;
+    height: 10rem;
     border-radius: 10px;
    
      
@@ -946,8 +946,8 @@ margin-bottom: 4rem;
 .colorb6{
     position: absolute;
     background-color: #efece5;
-    height:6rem;
-    width: 18rem;
+    height:8rem;
+    width: 20rem;
     border-radius: 10px;
     left: 113rem;
 }
@@ -962,8 +962,8 @@ margin-bottom: 4rem;
     margin-right: 20rem;
 }
 .story-circle5 img{
-    width: 80px;
-    height: 8rem;
+    width: 100px;
+    height: 10rem;
     border-radius: 10px;
    
      
@@ -990,8 +990,8 @@ margin-bottom: 4rem;
 .colorb7{
     position: absolute;
     background-color: #4f4d41;
-    height:6rem;
-    width: 18rem;
+    height:8rem;
+    width: 20rem;
     border-radius: 10px;
     left: 135rem;
 }
@@ -1006,8 +1006,8 @@ margin-bottom: 4rem;
     margin-right: 20rem;
 }
 .story-circle6 img{
-    width: 80px;
-    height: 8rem;
+    width: 100px;
+    height: 10rem;
     border-radius: 10px;
    
      
@@ -1034,8 +1034,8 @@ margin-bottom: 4rem;
 .colorb8{
     position: absolute;
     background-color:#e4a3a2;
-    height:6rem;
-    width: 18rem;
+    height:8rem;
+    width: 20rem;
     border-radius: 10px;
     left: 157rem;
 }
@@ -1050,8 +1050,8 @@ margin-bottom: 4rem;
     margin-right: 20rem;
 }
 .story-circle7 img{
-    width: 80px;
-    height: 8rem;
+    width: 100px;
+    height: 10rem;
     border-radius: 10px;
    
      
@@ -1078,8 +1078,8 @@ margin-bottom: 4rem;
 .colorb9{
     position: absolute;
     background-color:#364369;
-    height:6rem;
-    width: 18rem;
+    height:8rem;
+    width: 20rem;
     border-radius: 10px;
     left: 179rem;
 }
@@ -1094,8 +1094,8 @@ margin-bottom: 4rem;
     margin-right: 20rem;
 }
 .story-circle8 img{
-    width: 80px;
-    height: 8rem;
+    width: 100px;
+    height: 10rem;
     border-radius: 10px;
    
      
@@ -1122,8 +1122,8 @@ margin-bottom: 4rem;
 .colorb10{
     position: absolute;
     background-color: #9aaa9f;
-    height:6rem;
-    width: 18rem;
+    height:8rem;
+    width: 20rem;
     border-radius: 10px;
     left: 201rem;
 }
@@ -1138,8 +1138,8 @@ margin-bottom: 4rem;
  
 }
 .story-circle9 img{
-    width: 80px;
-    height: 8rem;
+    width: 100px;
+    height: 10rem;
     border-radius: 10px;
    
      
