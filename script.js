@@ -56,4 +56,34 @@ function registration() {
       // Redirecting to other page or webste code.
       window.location.href = "./index.html";
   }
+ 
+function addEvents(){
+    changeName();
+    changeImage();
+    
+}
+function changeImage() {
+    const img = document.getElementById("userImage");
+    img.src = localStorage.getItem("image");
+}
+function addImageEvent() {
+    const image_input = document.querySelector("#imageInput");
+    image_input.addEventListener("change", encodeImage);
+}
+function encodeImage() {
+    const imgPath = document.querySelector("#imageInput").files[0];
+    const reader = new FileReader();
+    reader.addEventListener("load", function() {
+        localStorage.setItem('image', reader.result);
+    }, false);
+    if (imgPath) {
+        reader.readAsDataURL(imgPath);
+    }
+    let newImg = document.getElementById("userImage1");
+    newImg.src = localStorage.getItem("image");
+}
+function changeName() {
+    const name_Element = document.getElementById("regFirstName");
+    name_Element.innerHTML = localStorage.regFirstName;
+}
 }

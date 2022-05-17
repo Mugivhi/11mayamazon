@@ -1094,7 +1094,7 @@ border-top-right-radius: 10%;
     }
     .topestnav {width: 8.33%;}
     .outPic {
-        
+    left: 30px;
         width: 10%;}
     .wel {width: 25%;}
     .search button {
@@ -1127,6 +1127,8 @@ border-top-right-radius: 10%;
     .lasstWrapper {width: 91.66%;}
    .container{
        width: 55%;
+       background-color: #bf5b41;
+       width: 79%;
    }
     .recent{
         padding: 0;
@@ -1173,7 +1175,7 @@ border-top-right-radius: 10%;
     }
     .authors{
         position: relative;
-        left: 48rem;
+        left: 55rem;
         bottom:68rem;
         align-items: center;
         margin-left:300px;
