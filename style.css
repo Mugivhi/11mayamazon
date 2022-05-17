@@ -1,149 +1,133 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap');
 @import "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+@font-face {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  src: url('\font\alternative-amazon-font\FiraSansCondensed-SemiBold')format('truetype');
 }
-body{
-  width: 100%;
+* {
+  box-sizing: border-box;
+}
+.login {
+  background: white;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  padding-bottom: 400px;
+}
+.loginLogo {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  object-fit: cover;
   justify-content: center;
-  background-image: url(./tools/city.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  font-family: sans-serif;
-}
-::selection{
-  color: #fff;
-  background: #5372F0;
-}
-.wrapper{
-  width: 380px;
-  padding: 40px 30px 50px 30px;
-  background: #fff;
-  border-radius: 5px;
-  text-align: center;
-  box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
-}
-.wrapper header{
-  font-size: 35px;
-  font-weight: 600;
-}
-.wrapper form{
-  margin: 40px 0;
-}
-form .field{
-  width: 100%;
-  margin-bottom: 20px;
-}
-form .field.shake{
-  animation: shake 0.3s ease-in-out;
-}
-@keyframes shake {
-  0%, 100%{
-    margin-left: 0px;
-  }
-  20%, 80%{
-    margin-left: -12px;
-  }
-  40%, 60%{
-    margin-left: 12px;
-  }
-}
-form .field .input-area{
-  height: 50px;
-  width: 100%;
+  align-items: center;
+  padding-right: 20px;
   position: relative;
+  left: -2rem;
 }
-form input{
-  width: 100%;
-  height: 100%;
-  outline: none;
-  padding: 0 45px;
-  font-size: 18px;
-  background: none;
-  caret-color: #5372F0;
+.loginLogo {
+  width: 200px;
+}
+.loginBox {
+  width: 300px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
+  box-shadow: 0px 1px 2px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid lightgray;
+  padding: 15px;
+}
+.loginForm input {
+  height: 30px;
   border-radius: 5px;
-  border: 1px solid #bfbfbf;
-  border-bottom-width: 2px;
-  transition: all 0.2s ease;
+  margin-bottom: 10px;
+  background-color: #fff;
+  outline: none;
+  width: 98%;
+  border: 1px solid grey;
 }
-form .field input:focus,
-form .field.valid input{
-  border-color: #5372F0;
+.loginForm .input:focus {
+  border: 2px solid orange;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
 }
-form .field.shake input,
-form .field.error input{
-  border-color: #dc3545;
+.loginBox p {
+  margin-top: 15px;
+  font-size: 12px;
+  justify-content: justify;
 }
-.field .input-area i{
-  position: absolute;
-  top: 50%;
-  font-size: 18px;
-  pointer-events: none;
-  transform: translateY(-50%);
-}
-.input-area .icon{
-  left: 15px;
-  color: #bfbfbf;
-  transition: color 0.2s ease;
-}
-.input-area .error-icon{
-  right: 15px;
+a {
+  cursor: pointer;
   color: orange;
-}
-form input:focus ~ .icon,
-form .field.valid .icon{
-  color: #5372F0;
-}
-form .field.shake input:focus ~ .icon,
-form .field.error input:focus ~ .icon{
-  color: #bfbfbf;
-}
-form input::placeholder{
-  color: #bfbfbf;
-  font-size: 17px;
-}
-form .field .error-txt{
-  color: #dc3545;
-  text-align: left;
-  margin-top: 5px;
-}
-form .field .error{
-  display: none;
-}
-form .field.shake .error,
-form .field.error .error{
-  display: block;
-}
-form .pass-txt{
-  text-align: left;
-  margin-top: -10px;
-}
-.wrapper a{
-  color: #5372F0;
   text-decoration: none;
 }
-.wrapper a:hover{
+a:hover {
+  color: blue;
   text-decoration: underline;
 }
-form input[type="submit"]{
-  height: 50px;
-  margin-top: 30px;
-  color: #fff;
-  padding: 0;
-  border: none;
-  background: orange;
+.loginSignInButton {
   cursor: pointer;
-  border-bottom: 2px solid rgba(0,0,0,0.1);
-  transition: all 0.3s ease;
+  background-color: #FF9900;
+  background-image: linear-gradient(62deg, #FF9900 0%, #F7CE68 100%);
+  border-radius: 2px;
+  margin-top: 10px;
+  border-color: #A88734 #9C7E31 #846A29;
 }
-form input[type="submit"]:hover{
-  background: #2c52ed;
+.loginBox Button {
+  cursor: pointer;
+  border-radius: 2px;
+  width: 100%;
+  outline: none;
+  border: 1px solid;
+  border-color: darkgray;
+  margin: top 10px;
+}
+.loginFooter h5 h4 {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: grey;
+}
+.loginFooter h5 {
+  padding-left: 10px;
+  padding-right: 10px;
+  align-items: center;
+  color: grey;
+}
+.loginFooter h4 {
+  align-items: center;
+  justify-content: center;
+  color: grey;
+}
+.loginFooter {
+  margin-left: 100px;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: 50rem;
+  right: 73rem;
+}
+.register{
+  width: 300px;
+  margin-left: 100px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
+  box-shadow: 0px 1px 2px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid lightgray;
+  padding: 15px;
+}
+.registerForm input{
+  height: 30px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  outline: none;
+  width: 98%;
+  border: 1px solid grey;
 }

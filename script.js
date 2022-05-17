@@ -1,43 +1,59 @@
-const form = document.querySelector("form");
-eField = form.querySelector(".email"),
-eInput = eField.querySelector("input"),
-pField = form.querySelector(".password"),
-pInput = pField.querySelector("input");
-form.onsubmit = (e)=>{
-  e.preventDefault(); //preventing the submission
-  //shaking red colors
-  (eInput.value == "") ? eField.classList.add("shake", "error") : checkEmail();
-  (pInput.value == "") ? pField.classList.add("shake", "error") : checkPass();
-  setTimeout(()=>{ // shake removed after 500ms
-    eField.classList.remove("shake");
-    pField.classList.remove("shake");
-  }, 500);
-  eInput.onkeyup = ()=>{checkEmail();} //calling checkEmail function 
-  pInput.onkeyup = ()=>{checkPass();} //calling checkPassword function 
-  function checkEmail(){ //checkEmail function
-    let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/; //pattern for validate email
-    if(!eInput.value.match(pattern)){ //if pattern not matched then add error and remove valid class
-      eField.classList.add("error");
-      eField.classList.remove("valid");
-      let errorTxt = eField.querySelector(".error-txt");
-      //if email value is not empty then show please enter valid email else show Email can't be blank
-      (eInput.value != "") ? errorTxt.innerText = "Enter a valid email address" : errorTxt.innerText = "Email can't be blank";
-    }else{ //if pattern matched then remove error and add valid class
-      eField.classList.remove("error");
-      eField.classList.add("valid");
-    }
+function login() {
+  var storedName = localStorage.getItem('regMail');
+  var storedPw = localStorage.getItem('regPasswordconfirm');
+  var userName = document.getElementById('logEmail');
+  var userPw = document.getElementById('logPassword');
+  //var userRemember = document.getElementById("rememberMe");
+  if (userName.value == storedName && userPw.value == storedPw) {
+      alert('You are logged in, redirecting you to landing page');
+      window.location.href = "./landing.html";
+  } else {
+      alert('Error on login');
+      window.location.href ="./index.html";
   }
-  function checkPass(){ //checkPass function
-    if(pInput.value == ""){ //if pass is empty then add error and remove valid class
-      pField.classList.add("error");
-      pField.classList.remove("valid");
-    }else{ //if pass is empty then remove error and add valid class
-      pField.classList.remove("error");
-      pField.classList.add("valid");
-    }
-  }
-  //if eField and pField doesn't contains error class that mean user filled details properly
-  if(!eField.classList.contains("error") && !pField.classList.contains("error")){
-    window.location.href = form.getAttribute("action"); 
+}
+function registration() {
+
+  var firstname = document.getElementById("regFirstName").value;
+  var email = document.getElementById("regMail").value;
+  var pwd = document.getElementById("regPassword").value;
+  var cpwd = document.getElementById("regPasswordconfirm").value;
+  //console.log(firstname + ", " + email + ", " + pwd + ", " + cpwd);
+  //conditions and parameters of the input data
+  var pwd_expression = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-])/;
+  var letters = /^[A-Za-z]+$/;
+  var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  if (firstname == '') {
+      alert('Please enter your name')
+  } else if (!letters.test(firstname)) {
+      alert('Name field requiregitd only alphabet characters')
+  } else if (email == '') {
+      alert("Please enter your email")
+  } else if (!filter.test(email)) {
+      alert('Invalid email');
+  } else if (pwd == '') {
+      alert('Please enter Password');
+  } else if (cpwd == '') {
+      alert('Enter Confirm Password');
+  } else if (!pwd_expression.test(pwd)) {
+      alert('Upper case, Lower case, Special character and Numeric letter are required in Password filed');
+  } else if (pwd != cpwd) {
+      alert('Password not Matched');
+  } else if (document.getElementById("regPassword").value.length < 6) {
+      alert('Password minimum length is 6');
+  } else if (document.getElementById("regPassword").value.length > 12) {
+      alert('Password max length is 12');
+  } else {
+      ////Store Information To Localstorage////
+      //var firstname = document.getElementById("regFirstName").value;
+      //var email = document.getElementById("regMail").value;
+      //var pwd = document.getElementById("regPassword").value;
+      //var cpwd = document.getElementById("regPasswordconfirm").value;
+      localStorage.setItem('regMail', email);
+      localStorage.setItem('regPasswordconfirm', cpwd);
+      //redirect user to login form
+      alert('Your account has been created , Redirecting you to Login Website');
+      // Redirecting to other page or webste code.
+      window.location.href = "./index.html";
   }
 }

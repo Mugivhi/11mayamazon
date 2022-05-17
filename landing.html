@@ -274,10 +274,10 @@
         <div class="boku">
         <h3>new release</h3>
         </div>
-        <table class="bton" cellspacing="20" cellpadding="20">
+        <table class="bton" >
             <tr>
                 <td id="td1">
-                    <img src="./tools/IMG-20220508-WA0125.jpg" height="250" width="200">
+                    <img src="./tools/IMG-20220508-WA0125.jpg" >
                     <font size="-1">
                     <h3>
                         Know your why
@@ -290,7 +290,7 @@
                 </font>
                 </td>
                 <td id="td2">
-                    <img src="./tools/IMG-20220508-WA0126.jpg" height="250" width="200">
+                    <img src="./tools/IMG-20220508-WA0126.jpg">
                    <font size="-1">
                     <h3>
                         She prays
@@ -302,7 +302,7 @@
                    </font> 
                 </td>
                 <td id="td3">
-                    <img src="./tools/IMG-20220508-WA0127.jpg" height="250" width="200">
+                    <img src="./tools/IMG-20220508-WA0127.jpg" >
                     <font size="-1">
                         <h3>
                             The book of god
@@ -314,7 +314,7 @@
                     </font>
                 </td>
                 <td id="td4">
-                    <img src="./tools/IMG-20220508-WA0128.jpg" height="250" width="200">
+                    <img src="./tools/IMG-20220508-WA0128.jpg">
                     <font size="-1">
                         <h3>
                             Tyler pery
@@ -326,7 +326,7 @@
                   </font>
                 </td>
                 <td id="td5">
-                    <img src="./tools/IMG-20220508-WA0117.jpg"  height="250" width="200">
+                    <img src="./tools/IMG-20220508-WA0117.jpg" >
                     <font size="-1">
                         <h3>
                             Pelato
@@ -343,7 +343,7 @@
         </main>
         <footer>
             <div class="authors">
-                <table cellpadding="10" cellspacing="10" >
+                <table>
                     <h3>Famous Authors</h3>
                     <tr>
                         <td>
@@ -388,27 +388,20 @@
              const hScroll = document.querySelector(".horizontal-scroll");
              const btnScrollLeft = document.querySelector("#btn-scroll-left");
              const btnScrollRight = document.querySelector("#btn-scroll-right");
-             btnScrollLeft.style.opacity = "0";
-            
              let maxScroll = -sCont.offsetWidth + hScroll.offsetWidth;
               function scrollHorizontally(val){
                   currentScrollPosition += (val * scrollAmount);
                   sCont.style.left = currentScrollPosition + "px";
                   if(currentScrollPosition >= 0){
                        currentScrollPosition = 0
-                       btnScrollLeft.style.opacity = "0";
+                       
                   }
-                  else{
-                    btnScrollLeft.style.opacity = "1";
-                  }
+                  
                   if(currentScrollPosition <= maxScroll){
                       currentScrollPosition = maxScroll;
-                      btnScrollRight.style.opacity = "0";
 
                   }
-                  else{
-                    btnScrollRight.style.opacity = "1";
-                  }
+                  
                   sCont.style.left=currentScrollPosition + "px"; 
               }
              

@@ -1,37 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Form validation in HTML & CSS | CodingNepal</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>Amazon Login Page</title>
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js">
+    </script>
 </head>
-<body>
-  <div class="wrapper">
-    <header>Login Form</header>
-    <form action="./landing.html">
-      <div class="field email">
-        <div class="input-area">
-          <input type="text" placeholder="Email Address">
-          <i class="icon fas fa-envelope"></i>
-          <i class="error error-icon fas fa-exclamation-circle"></i>
+<body style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    <div class="login">
+        <div class="loginLogo">
+            <img src="./tools/untitled.png">
         </div>
-        <div class="error error-txt">Email can't be blank</div>
-      </div>
-      <div class="field password">
-        <div class="input-area">
-          <input type="password" placeholder="Password">
-          <i class="icon fas fa-lock"></i>
-          <i class="error error-icon fas fa-exclamation-circle"></i>
+        <div class="loginBox">
+            <h1>Sign-in</h1>
+            <form class="loginForm" method="GET" action="./landing.html">
+                <h3>E-mail</h3>
+                <input type="text" name="user-mail" class="input" placeholder="Enter in your email" id="logEmail">
+                <h3>Password</h3>
+                <input type="password" name="password" class="input" placeholder="Password " id="logPassword">
+                <button class="loginSignInButton" onclick="login()">Sign In</button>
+            </form>
+            <p>
+                By continuing, you agree to Amazon's <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice</a>
+            </p>
+            <a href="./register.html"><button class="login_registerButton">Create Your Amazon Account</button></a>
         </div>
-        <div class="error error-txt">Password can't be blank</div>
-      </div>
-      <div class="pass-txt"><a href="register.html">Forgot password?</a></div>
-      <input type="submit" value="Login">
-    </form>
-    <div class="sign-txt">Not yet member? <a href="register.html">Signup now</a></div>
-  </div>
-  <script src="script.js"></script>
+    </div>
 </body>
+<footer class="loginFooter" style="color:#ada7a7">
+</footer>
 </html>
