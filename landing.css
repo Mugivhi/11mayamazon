@@ -1082,7 +1082,6 @@ border-top-right-radius: 10%;
   @media only screen and (min-width: 900px) {
     /* For desktop: */
     .topestnav {width: 8.33%;}
-    .outPic {width: 10%;}
     .wel {width: 25%;}
     .search input[type=text]{
         width: 20rem;
@@ -1096,7 +1095,7 @@ border-top-right-radius: 10%;
     .topestnav {width: 8.33%;}
     .outPic {
         
-        width: 15%;}
+        width: 10%;}
     .wel {width: 25%;}
     .search button {
        left: 7.5rem;
@@ -1126,7 +1125,9 @@ border-top-right-radius: 10%;
     
     .wraper {width: 83.33%;}
     .lasstWrapper {width: 91.66%;}
-    .container {width:80%;}
+   .container{
+       width: 55%;
+   }
     .recent{
         padding: 0;
         margin-top: 13rem;
@@ -1177,7 +1178,7 @@ border-top-right-radius: 10%;
         align-items: center;
         margin-left:300px;
         background-color: silver;
-        width: 17%;
+        width: 10.5%;
         height: 22rem;
         border-bottom-left-radius: 10%;
         border-top-left-radius: 10%;
