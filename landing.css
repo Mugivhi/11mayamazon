@@ -827,9 +827,19 @@ a{
         top: 6rem;
 
     }
-    .topestnav {width: 8.33%;}
+    .topestnav {
+        width: 89%;
+        height: 4rem;
+        padding-top: 60px;
+        bottom: 45rem;
+        position: fixed;
+        left: 10rem;
+        z-index: 2;
+        background-color:#faf8f4;
+    }
     .outPic {
-        
+        position: fixed;
+        bottom: 30rem;
         width: 20%;}
     .wel {width: 25%;}
     .search button {
@@ -845,6 +855,7 @@ a{
     }
     .pic {width: 50%;}
     .kindle {
+        top: 4rem;
         left: -1rem;
     }
     #ftured {
@@ -855,7 +866,9 @@ a{
     }
     .wraper {width: 83.33%;}
     .lasstWrapper {width: 91.66%;}
-    .container {width: 50%;}
+    .container {
+        top: 9rem;
+        width: 50%;}
     .recent{
         
         width: 50%;
@@ -863,7 +876,7 @@ a{
         margin-top: 20rem;
         height: 25rem;
         left: 13rem;
-        top:-45rem;
+        top:-8rem;
    }
    .recent img{
     height: 20rem;
@@ -959,8 +972,14 @@ border-top-right-radius: 10%;
 }
 .lasstWrapper{
     position: fixed;
-    bottom: 62rem;
+    bottom: 55rem;
 }
+.wraper { 
+    width: 11%;
+    height: 45%;
+    position: fixed;
+bottom: 12rem;}
+
 }
 @media only screen and (min-width: 600px) {
    
@@ -975,9 +994,9 @@ border-top-right-radius: 10%;
         width: 89%;
         height: 4rem;
         padding-top: 60px;
-        bottom: 50rem;
+        bottom: 45rem;
         position: fixed;
-        left: 8rem;
+        left: 10rem;
         z-index: 2;
         background-color:#faf8f4;
     }
@@ -1124,7 +1143,7 @@ border-top-right-radius: 10%;
   }
   .lasstWrapper{
     position: fixed;
-    bottom: 64rem;
+    bottom: 55rem;
 }
   
 .wraper { 
