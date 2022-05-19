@@ -12,6 +12,11 @@
     height: 100%;
 
 }
+
+a{
+    color: black;
+    text-decoration: none;
+}
 .topestnav{
     position: relative;
     display: flex;
@@ -318,9 +323,10 @@
     margin-bottom: 10rem;
 }
 .horizontal-scroll{
-    width: 100rem;
+    width:106rem;
     height: 300px;
-    background-color:#faf8f4;
+    left: 0.1rem;
+    background-color: #faf8f4;
     border-radius: 5px;
     display: flex;
     flex-direction: row;
@@ -361,8 +367,8 @@
     margin-right: 20rem;
 }
 .story-circle img{
-    width: 100px;
-    height: 10rem;
+    width: 150px;
+    height: 14rem;
     border-radius: 10px;
    
      
@@ -370,20 +376,21 @@
 .colorb1{
     position: absolute;
     background-color: red;
-    height:8rem;
-    width: 20rem;
+    height:12rem;
+    width: 35rem;
     border-radius: 10px;
-    left: 3rem;
+    left: 0rem;
 }
 .wordsb1{
     position: absolute;
     width: 10rem;
-    left: 7.5rem;
+    left: 14rem;
+    top: 2rem;
 }
 .bookimg1{
     position: absolute;
-    left: -7rem;
-    top: -3rem;
+    left:-12rem;
+    top: -5rem;;
 
 }
 .wordsb1 p{
@@ -396,10 +403,10 @@
 .colorb2{
     position: absolute;
     background-color:#bf5b41;
-    height:8rem;
-    width: 20rem;
+    height:12rem;
+    width: 35rem;
     border-radius: 10px;
-    left: 25rem;
+    left: 39rem;
 }
 .story-circle1{
     width: 60px;
@@ -412,8 +419,8 @@
     margin-right: 20rem;
 }
 .story-circle1 img{
-    width: 100px;
-    height: 10rem;
+    width: 150px;
+    height: 14rem;
     border-radius: 10px;
    
      
@@ -421,12 +428,13 @@
 .wordsb2{
     position: absolute;
     width: 10rem;
-    left: 7.5rem;
+    left: 20rem;
+    top: 4rem;
 }
 .bookimg2{
     position: absolute;
-    left: -7rem;
-    top: -3rem;
+    left:-18rem;
+    top: -7rem;
 
 }
 .wordsb2 p{
@@ -440,10 +448,10 @@
 .colorb3{
     position: absolute;
     background-color:#6b2117;
-    height:8rem;
-    width: 20rem;
+    height:12rem;
+    width: 35rem;
     border-radius: 10px;
-    left: 47rem;
+    left: 78rem;
 }
 .story-circle2{
     width: 60px;
@@ -456,8 +464,8 @@
     margin-right: 20rem;
 }
 .story-circle2 img{
-    width: 100px;
-    height: 10rem;
+    width: 150px;
+    height: 14rem;;
     border-radius: 10px;
    
      
@@ -465,12 +473,15 @@
 .wordsb3{
     position: absolute;
     width: 10rem;
-    left: 7.5rem;
+    left: 20rem;
+    top: 4rem;
 }
 .bookimg3{
     position: absolute;
-    left: -7rem;
-    top: -3rem;
+    width: 10rem;
+    left: -18rem;
+    top: -7rem;
+   
 
 }
 .wordsb3 p{
@@ -484,10 +495,10 @@
 .colorb4{
     position: absolute;
     background-color: #411024;
-    height:8rem;
-    width: 20rem;
+    height:12rem;
+    width: 35rem;
     border-radius: 10px;
-    left: 69rem;
+    left: 117rem;
 }
 .story-circle3{
     width: 60px;
@@ -500,8 +511,8 @@
     margin-right: 20rem;
 }
 .story-circle3 img{
-    width: 100px;
-    height: 10rem;
+    width: 150px;
+    height: 14rem;
     border-radius: 10px;
    
      
@@ -509,12 +520,14 @@
 .wordsb4{
     position: absolute;
     width: 10rem;
-    left: 7.5rem;
+    left: 20rem;
+    top: 4rem;
 }
 .bookimg4{
     position: absolute;
-    left: -7rem;
-    top: -3rem;
+    width: 10rem;
+    left: -18rem;
+    top: -7rem;
 
 }
 .wordsb4 p{
@@ -528,10 +541,10 @@
 .colorb5{
     position: absolute;
     background-color: #f1e6a0;
-    height:8rem;
-    width: 20rem;
+    height:12rem;
+    width: 35rem;
     border-radius: 10px;
-    left: 91rem;
+    left: 156rem;
 }
 .story-circle4{
     width: 60px;
@@ -544,8 +557,8 @@
     margin-right: 20rem;
 }
 .story-circle4 img{
-    width: 100px;
-    height: 10rem;
+    width: 150px;
+    height: 14rem;
     border-radius: 10px;
    
      
@@ -553,12 +566,14 @@
 .wordsb5{
     position: absolute;
     width: 10rem;
-    left: 7.5rem;
+    left: 20rem;
+    top: 4rem;
 }
 .bookimg5{
     position: absolute;
-    left: -7rem;
-    top: -3rem;
+    width: 10rem;
+    left: -18rem;
+    top: -7rem;
 
 }
 .wordsb5 p{
@@ -572,10 +587,10 @@
 .colorb6{
     position: absolute;
     background-color: #efece5;
-    height:8rem;
-    width: 20rem;
+    height:12rem;
+    width: 35rem;
     border-radius: 10px;
-    left: 113rem;
+    left: 195rem;
 }
 .story-circle5{
     width: 60px;
@@ -588,8 +603,8 @@
     margin-right: 20rem;
 }
 .story-circle5 img{
-    width: 100px;
-    height: 10rem;
+    width: 150px;
+    height: 14rem;
     border-radius: 10px;
    
      
@@ -597,12 +612,14 @@
 .wordsb6{
     position: absolute;
     width: 10rem;
-    left: 7.5rem;
+    left: 20rem;
+    top: 4rem;
 }
 .bookimg6{
     position: absolute;
-    left: -7rem;
-    top: -3rem;
+    width: 10rem;
+    left: -18rem;
+    top: -7rem;
 
 }
 .wordsb6 p{
@@ -616,10 +633,10 @@
 .colorb7{
     position: absolute;
     background-color: #4f4d41;
-    height:8rem;
-    width: 20rem;
+    height:12rem;
+    width: 35rem;
     border-radius: 10px;
-    left: 135rem;
+    left: 234rem;
 }
 .story-circle6{
     width: 60px;
@@ -632,8 +649,8 @@
     margin-right: 20rem;
 }
 .story-circle6 img{
-    width: 100px;
-    height: 10rem;
+    width: 150px;
+    height: 14rem;
     border-radius: 10px;
    
      
@@ -641,12 +658,14 @@
 .wordsb7{
     position: absolute;
     width: 10rem;
-    left: 7.5rem;
+    left: 20rem;
+    top: 4rem;
 }
 .bookimg7{
     position: absolute;
-    left: -7rem;
-    top: -3rem;
+    width: 10rem;
+    left: -18rem;
+    top: -7rem;
 
 }
 .wordsb7 p{
@@ -660,10 +679,10 @@
 .colorb8{
     position: absolute;
     background-color:#e4a3a2;
-    height:8rem;
-    width: 20rem;
+    height:12rem;
+    width: 35rem;
     border-radius: 10px;
-    left: 157rem;
+    left: 273rem;
 }
 .story-circle7{
     width: 60px;
@@ -676,8 +695,8 @@
     margin-right: 20rem;
 }
 .story-circle7 img{
-    width: 100px;
-    height: 10rem;
+    width: 150px;
+    height: 14rem;
     border-radius: 10px;
    
      
@@ -685,12 +704,14 @@
 .wordsb8{
     position: absolute;
     width: 10rem;
-    left: 7.5rem;
+    left: 20rem;
+    top: 4rem;
 }
 .bookimg8{
     position: absolute;
-    left: -7rem;
-    top: -3rem;
+    width: 10rem;
+    left: -18rem;
+    top: -7rem;
 
 }
 .wordsb8 p{
@@ -704,10 +725,10 @@
 .colorb9{
     position: absolute;
     background-color:#364369;
-    height:8rem;
-    width: 20rem;
+    height:12rem;
+    width: 35rem;
     border-radius: 10px;
-    left: 179rem;
+    left: 312rem;
 }
 .story-circle8{
     width: 60px;
@@ -720,8 +741,8 @@
     margin-right: 20rem;
 }
 .story-circle8 img{
-    width: 100px;
-    height: 10rem;
+    width: 150px;
+    height: 14rem;
     border-radius: 10px;
    
      
@@ -729,13 +750,14 @@
 .wordsb9{
     position: absolute;
     width: 10rem;
-    left: 7.5rem;
+    left: 20rem;
+    top: 4rem;
 }
 .bookimg9{
     position: absolute;
-    left: -7rem;
-    top: -3rem;
-
+    width: 10rem;
+    left: -18rem;
+    top: -7rem;
 }
 .wordsb9 p{
     color: white;
@@ -748,10 +770,10 @@
 .colorb10{
     position: absolute;
     background-color: #9aaa9f;
-    height:8rem;
-    width: 20rem;
+    height:12rem;
+    width: 35rem;
     border-radius: 10px;
-    left: 201rem;
+    left: 351rem;
 }
 .story-circle9{
     width: 60px;
@@ -764,8 +786,8 @@
  
 }
 .story-circle9 img{
-    width: 100px;
-    height: 10rem;
+    width: 150px;
+    height: 14rem;
     border-radius: 10px;
    
      
@@ -773,12 +795,14 @@
 .wordsb10{
     position: absolute;
     width: 10rem;
-    left: 7.5rem;
+    left: 20rem;
+    top: 4rem;
 }
 .bookimg10{
     position: absolute;
-    left: -7rem;
-    top: -3rem;
+    width: 10rem;
+    left: -18rem;
+    top: -7rem;
 
 }
 .wordsb10 p{
@@ -872,7 +896,7 @@ border-top-right-radius: 10%;
 }
 .authors{
     position: absolute;
-    bottom: -35rem;
+    bottom: -20rem;
     width: 15rem;
     left: -2rem;
     height: 300px;
@@ -933,15 +957,29 @@ border-top-right-radius: 10%;
      width: 100%;
      text-align: center;
 }
-
+.lasstWrapper{
+    position: fixed;
+    bottom: 62rem;
+}
 }
 @media only screen and (min-width: 600px) {
+   
     /* For tablets: */
     .search input[type=text]{
         width: 10rem;
         position: absolute;
         left: 3rem;
         
+    }
+    .topestnav {
+        width: 89%;
+        height: 4rem;
+        padding-top: 60px;
+        bottom: 50rem;
+        position: fixed;
+        left: 8rem;
+        z-index: 2;
+        background-color:#faf8f4;
     }
     #newrel {
         left: 15.5rem;
@@ -950,7 +988,10 @@ border-top-right-radius: 10%;
         left: 12rem;
      }
     .outPic {
-        width: 20%;}
+        position: fixed;
+        width: 20%;
+        top: 1rem;
+    }
     .lstred{
         position: absolute;
         top: 6rem;
@@ -958,6 +999,7 @@ border-top-right-radius: 10%;
     }
     .kindle {
         left: 1rem;
+        top: 4rem;
     }
     #ftured {
         left: 20rem;
@@ -968,13 +1010,14 @@ border-top-right-radius: 10%;
     .container {
         height:25rem;
         width: 22rem;
+        top: 10rem;
     }
     .recent{
          padding: 0;
          margin-top: 7rem;
          height: 50rem;
          left: 13.99rem;
-         top: -47rem;
+         top: 5rem;
     }
     .recent img{
         height: 20%;
@@ -1008,7 +1051,7 @@ border-top-right-radius: 10%;
     }
     .authors{
         position: absolute;
-        bottom: -68rem;
+        bottom: -55rem;
         width: 20rem;
         left: -5rem;
         height: 300px;
@@ -1079,6 +1122,16 @@ border-top-right-radius: 10%;
          width: 40%;
          text-align: center;
   }
+  .lasstWrapper{
+    position: fixed;
+    bottom: 64rem;
+}
+  
+.wraper { 
+    width: 11%;
+    height: 45%;
+    position: fixed;
+bottom: 12rem;}
 }
   @media only screen and (min-width: 900px) {
     /* For desktop: */
@@ -1093,7 +1146,7 @@ border-top-right-radius: 10%;
         
     }
     .topestnav {
-        width: 89%;
+        width: 88%;
         padding-top: 60px;
         height: 2rem;
         bottom: 57rem;
@@ -1138,10 +1191,11 @@ border-top-right-radius: 10%;
     position: fixed;
 bottom: 12rem;}
    .container{
-       width: 90%;
-       left: 13.5rem;
+       width: 88%;
+       left: 14rem;
        height: 20rem;
-      top: 13rem;
+      top: 10rem;
+      background-color: #faf8f4;
    }
     .recent{
         padding: 10px;
