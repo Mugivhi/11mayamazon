@@ -7,10 +7,12 @@ function login() {
   if (userName.value == storedName && userPw.value == storedPw) {
       alert('You are logged in, redirecting you to landing page');
       window.location.href = "./landing.html";
-  } else {
+  } else if(userName.value != storedName && userPw.value != storedPw) {
       alert('Error on login');
-      window.location.href ="./index.html";
+     
   }
+  else if(userName ==''&& userPw  =='')
+  alert('username and password cant be empty');
 }
 function registration() {
 
@@ -51,12 +53,16 @@ function registration() {
       //var cpwd = document.getElementById("regPasswordconfirm").value;
       localStorage.setItem('regMail', email);
       localStorage.setItem('regPasswordconfirm', cpwd);
+      localStorage.setItem('name', firstname);
       //redirect user to login form
       alert('Your account has been created , Redirecting you to Login Website');
       // Redirecting to other page or webste code.
       window.location.href = "./index.html";
   }
  
+    
+}
+
 function addEvents(){
     changeName();
     changeImage();
@@ -70,20 +76,18 @@ function addImageEvent() {
     const image_input = document.querySelector("#imageInput");
     image_input.addEventListener("change", encodeImage);
 }
+
+
+function changeName() {
+    const name_Element = document.getElementById("regFirstName");
+    name_Element.innerHTML = localStorage.getItem('name');
+}
+
 function encodeImage() {
-    const imgPath = document.querySelector("#imageInput").files[0];
+    const imgPath = document.querySelector("#userImage1").files[0];
     const reader = new FileReader();
     reader.addEventListener("load", function() {
         localStorage.setItem('image', reader.result);
     }, false);
-    if (imgPath) {
-        reader.readAsDataURL(imgPath);
-    }
-    let newImg = document.getElementById("userImage1");
-    newImg.src = localStorage.getItem("image");
-}
-function changeName() {
-    const name_Element = document.getElementById("regFirstName");
-    name_Element.innerHTML = localStorage.regFirstName;
-}
+    reader.readAsDataURL(imgPath);
 }
