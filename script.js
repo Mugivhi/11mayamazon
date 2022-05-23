@@ -55,7 +55,7 @@ function registration() {
       localStorage.setItem('regPasswordconfirm', cpwd);
       localStorage.setItem('name', firstname);
       //redirect user to login form
-      alert('Your account has been created , Redirecting you to Login Website');
+      alert('Your account has been created , Redirecting you to Login page');
       // Redirecting to other page or webste code.
       window.location.href = "./index.html";
   }
