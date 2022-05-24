@@ -46,17 +46,10 @@ function registration() {
   } else if (document.getElementById("regPassword").value.length > 12) {
       alert('Password max length is 12');
   } else {
-      ////Store Information To Localstorage////
-      //var firstname = document.getElementById("regFirstName").value;
-      //var email = document.getElementById("regMail").value;
-      //var pwd = document.getElementById("regPassword").value;
-      //var cpwd = document.getElementById("regPasswordconfirm").value;
       localStorage.setItem('regMail', email);
       localStorage.setItem('regPasswordconfirm', cpwd);
       localStorage.setItem('name', firstname);
-      //redirect user to login form
       alert('Your account has been created , Redirecting you to Login page');
-      // Redirecting to other page or webste code.
       window.location.href = "./index.html";
   }
  
