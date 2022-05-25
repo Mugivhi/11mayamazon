@@ -1388,6 +1388,9 @@ bottom: 12rem;}
       height: 17rem;
       width: 12rem;
   }
+  .cotainer1 .product-container .produt img:hover{
+      transform: scale(0.9);
+  }
   .cotainer1 .product-container .produt h3:hover{
       color: green;
       border: none;
@@ -1427,9 +1430,9 @@ bottom: 12rem;}
     height: 20rem;
     width: 15rem;
 }
-.product-prev .preview img:hover{
-    transform: scale(2);
-}
+/* .product-prev .preview img:hover{
+    transform: scale();
+} */
 .product-prev .preview .fa-times{
     position: absolute;
     top: 0.5rem;
