@@ -1212,7 +1212,7 @@ bottom: 12rem;}
     position: fixed;
 bottom: 12rem;}
    .container{
-       width: 88%;
+       width: 87%;
        left: 14rem;
        height: 20rem;
       top: 10rem;
@@ -1426,6 +1426,9 @@ bottom: 12rem;}
 .product-prev .preview img{
     height: 20rem;
     width: 15rem;
+}
+.product-prev .preview img:hover{
+    transform: scale(2);
 }
 .product-prev .preview .fa-times{
     position: absolute;
