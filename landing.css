@@ -1389,7 +1389,7 @@ bottom: 12rem;}
       width: 12rem;
   }
   .cotainer1 .product-container .produt img:hover{
-      transform: scale(0.9);
+      transform: scale(1.1);
   }
   .cotainer1 .product-container .produt h3:hover{
       color: green;
@@ -1458,15 +1458,68 @@ transform: rotate(45deg);
     position: relative;
     top: -1rem;
 }
-.product-prev .preview .buttons a{
+.product-prev .preview .buttons button{
   flex: 1 1 16rem;
   padding: 1rem;
   font-size: 1rem;
-  color: #444;
+  color:black;
   border: .1rem solid #444;
+  background-color:rgb(9, 100, 131);
 }
 .product-prev .preview .buttons a .cart :hover{
 color: #111;
+}
+.trolley i{
+position: absolute;
+left:35rem;
+top: 1rem;
+}
+.product-prev .preview .buttons button:hover{
+    transform: scale(1.1);
+}.plusBtn{
+    display: none;
+}
+.minusBtn{
+    display: none;
+}
+.doneBtn{
+    display: none;
+}
+.plusBtn2{
+    display: none;
+}
+.minusBtn2{
+    display: none;
+}
+.doneBtn2{
+    display: none;
+}
+.plusBtn3{
+    display: none;
+}
+.minusBtn3{
+    display: none;
+}
+.doneBtn3{
+    display: none;
+}
+.plusBtn4{
+    display: none;
+}
+.minusBtn4{
+    display: none;
+}
+.doneBtn4{
+    display: none;
+}
+.plusBtn5{
+    display: none;
+}
+.minusBtn5{
+    display: none;
+}
+.doneBtn5{
+    display: none;
 }
 
 

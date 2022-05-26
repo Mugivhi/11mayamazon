@@ -49,6 +49,9 @@
                 <h3><b>new release</b></h3>
             </font>
             </div>
+            <div class="trolley">
+        <i class="fa-solid fa-cart-shopping"></i>
+        </div>
             <div id="ftured">
                <font size="-4"><h3><b>featured</b> </h3></font>
             </div>
@@ -467,7 +470,10 @@
               grow in prayer, but we don't know where to begin, what to say, or how to listen for his voice.</p>
         <div class="price">R500</div>
         <div class="buttons">
-            <a href="#" class="cart">add to cart</a>
+          <button class="minusBtn">-</button>
+          <button class="mainBtn">ADD TO CART<i class="fa-solid fa-cart-shopping"></i></button>
+          <button class="plusBtn">+</button>
+          <button class="doneBtn">done!</button>
         </div>
     </div>
     <div class="preview "  data-target="p-2">
@@ -489,7 +495,10 @@
             consequatur perferendis omnis. Libero laboriosam illo debitis quaerat sapiente quas accusamus ipsa. Id, sequi nemo?</p>
         <div class="price">R500</div>
         <div class="buttons">
-            <a href="#" class="cart">add to cart</a>
+            <button class="minusBtn2">-</button>
+            <button class="mainBtn2">ADD TO CART<i class="fa-solid fa-cart-shopping"></i></button>
+            <button class="plusBtn2">+</button>
+            <button class="doneBtn2">done!</button>
         </div>
     </div>
     <div class="preview "  data-target="p-3">
@@ -512,7 +521,10 @@
              experience to help Christians cut through the confusion and distractions and live lives in tune with God."</p>
         <div class="price">R500</div>
         <div class="buttons">
-            <a href="#" class="cart">add to cart</a>
+            <button class="minusBtn3">-</button>
+            <button class="mainBtn3">ADD TO CART<i class="fa-solid fa-cart-shopping"></i></button>
+            <button class="plusBtn3">+</button>
+            <button class="doneBtn3">done!</button>
         </div>
     </div>
     <div class="preview "  data-target="p-4">
@@ -535,7 +547,10 @@
              retold with exciting detail and passionate energy.</p>
         <div class="price">R500</div>
         <div class="buttons">
-            <a href="#" class="cart">add to cart</a>
+            <button class="minusBtn4">-</button>
+          <button class="mainBtn4">ADD TO CART<i class="fa-solid fa-cart-shopping"></i></button>
+          <button class="plusBtn4">+</button>
+          <button class="doneBtn4">done!</button>
         </div>
     </div>
     <div class="preview " data-target="p-5">
@@ -560,7 +575,10 @@
             lives and pull themselves up to a better, more fulfilling place.</p>
         <div class="price">R500</div>
         <div class="buttons">
-            <a href="#" class="cart">add to cart</a>
+            <button class="minusBtn5">-</button>
+            <button class="mainBtn5">ADD TO CART<i class="fa-solid fa-cart-shopping"></i></button>
+            <button class="plusBtn5">+</button>
+            <button class="doneBtn5">done!</button>
         </div>
     </div>
     </div>
@@ -650,6 +668,135 @@
                   }
 
               });
+              let btn=document.querySelector('.mainBtn');
+              let mbtn=document.querySelector('.minusBtn');
+              let pbtn=document.querySelector('.plusBtn');
+              let dbtn=document.querySelector('.doneBtn')
+              btn.addEventListener("click",()=>{
+                  if( btn.innerText=="ADD TO CART")
+                  btn.innerText =1;
+                  pbtn.style.display='inline-block';
+                  mbtn.style.display='inline-block';
+                  dbtn.style.display='inline-block';
+
+              })
+              mbtn.addEventListener("click",()=>{
+                  btn.innerText=btn.innerText -1;
+                  pbtn.style.display='inline-block';
+                  if( btn.innerText<=1){
+                    mbtn.style.display='none';
+                  }
+                
+                  dbtn.style.display='inline-block';
+              })
+              pbtn.addEventListener('click',()=>{
+                btn.innerText=+(btn.innerText) + +1;
+                pbtn.style.display='inline-block';
+                  mbtn.style.display='inline-block';
+                  dbtn.style.display='inline-block';
+              })
+              let btnn=document.querySelector('.mainBtn2');
+              let mbtnn=document.querySelector('.minusBtn2');
+              let pbtnn=document.querySelector('.plusBtn2');
+              let dbtnn=document.querySelector('.doneBtn2')
+              btnn.addEventListener("click",()=>{
+                  btnn.innerText =1;
+                  pbtnn.style.display='inline-block';
+                  mbtnn.style.display='inline-block';
+                  dbtnn.style.display='inline-block';
+
+              })
+              mbtnn.addEventListener("click",()=>{
+                  btnn.innerText=btnn.innerText -1;
+                  pbtnn.style.display='inline-block';
+                  if( btnn.innerText<=1){
+                    mbtnn.style.display='none';
+                  }
+                  
+                  dbtnn.style.display='inline-block';
+              })
+              pbtnn.addEventListener('click',()=>{
+                btnn.innerText=+(btnn.innerText) + +1;
+                pbtnn.style.display='inline-block';
+                  mbtnn.style.display='inline-block';
+                  dbtnn.style.display='inline-block';
+              })
+              let btnn1=document.querySelector('.mainBtn3');
+              let mbtnn1=document.querySelector('.minusBtn3');
+              let pbtnn1=document.querySelector('.plusBtn3');
+              let dbtnn1=document.querySelector('.doneBtn3')
+              btnn1.addEventListener("click",()=>{
+                  btnn1.innerText =1;
+                  pbtnn1.style.display='inline-block';
+                  mbtnn1.style.display='inline-block';
+                  dbtnn1.style.display='inline-block';
+
+              })
+              mbtnn1.addEventListener("click",()=>{
+                  btnn1.innerText=btnn1.innerText -1;
+                  pbtnn1.style.display='inline-block';
+                  if( btnn1.innerText<=1){
+                    mbtnn1.style.display='none';
+                  }
+                  dbtnn1.style.display='inline-block';
+              })
+              pbtnn1.addEventListener('click',()=>{
+                btnn1.innerText=+(btnn1.innerText) + +1;
+                pbtnn1.style.display='inline-block';
+                  mbtnn1.style.display='inline-block';
+                  dbtnn1.style.display='inline-block';
+              })
+              let btnn2=document.querySelector('.mainBtn4');
+              let mbtnn2=document.querySelector('.minusBtn4');
+              let pbtnn2=document.querySelector('.plusBtn4');
+              let dbtnn2=document.querySelector('.doneBtn4')
+              btnn2.addEventListener("click",()=>{
+                  btnn2.innerText =1;
+                  pbtnn2.style.display='inline-block';
+                  mbtnn2.style.display='inline-block';
+                  dbtnn2.style.display='inline-block';
+
+              })
+              mbtnn2.addEventListener("click",()=>{
+                  btnn2.innerText=btnn2.innerText -1;
+                  pbtnn2.style.display='inline-block';
+                  if( btnn2.innerText<=1){
+                    mbtnn2.style.display='none';
+                  }
+                  dbtnn2.style.display='inline-block';
+              })
+              pbtnn2.addEventListener('click',()=>{
+                btnn2.innerText=+(btnn2.innerText) + +1;
+                pbtnn2.style.display='inline-block';
+                  mbtnn2.style.display='inline-block';
+                  dbtnn2.style.display='inline-block';
+              })
+              let btnn3=document.querySelector('.mainBtn5');
+              let mbtnn3=document.querySelector('.minusBtn5');
+              let pbtnn3=document.querySelector('.plusBtn5');
+              let dbtnn3=document.querySelector('.doneBtn5')
+              btnn3.addEventListener("click",()=>{
+                  btnn3.innerText =1;
+                  pbtnn3.style.display='inline-block';
+                  mbtnn3.style.display='inline-block';
+                  dbtnn3.style.display='inline-block';
+
+              })
+              mbtnn3.addEventListener("click",()=>{
+                  btnn3.innerText=btnn3.innerText -1;
+                  pbtnn3.style.display='inline-block';
+                  if( btnn3.innerText<=1){
+                    mbtnn3.style.display='none';
+                  }
+                  dbtnn3.style.display='inline-block';
+              })
+              pbtnn3.addEventListener('click',()=>{
+                btnn3.innerText=+(btnn3.innerText) + +1;
+                pbtnn3.style.display='inline-block';
+                  mbtnn3.style.display='inline-block';
+                  dbtnn3.style.display='inline-block';
+              })
+              
               </script>
         </footer>
     </body>
