@@ -13,11 +13,6 @@
     height: 100%;
 
 }
-/* 
-a{
-    color: black;
-    text-decoration: none;
-} */
 .topestnav{
     position: relative;
     display: flex;
@@ -116,59 +111,6 @@ a{
     width: 4rem;
     
 }
-#dot{
-    position: relative;
-}
-.dotOne{
-    position: absolute;
-    background-color: black;
-    width: 3px;
-    height: 3px;
-    top:6px;
-    left: 100px;
-    border-radius: 50%;
-}
-.dotTwo{
-    position: absolute;
-    background-color: black;
-    width: 3px;
-    height: 3px;
-    top:-6px;
-    left: 110px;
-    border-radius: 50%;
-}
-.dotThree{
-    position: absolute;
-    background-color: black;
-    width: 3px;
-    height: 3px;
-    top:6px;
-    left: 110px;
-    border-radius: 50%;
-}
-.lstred{
-    position: absolute;
-  left: 15rem;
-  bottom: 50rem;
-}
-.dotFour{
-    position: absolute;
-    background-color: black;
-    width: 3px;
-    height: 3px;
-    top:-6px;
-    left: 100px;
-    border-radius: 50%;
-}
-.orangeDot{
-    position: absolute;
-    background-color: orange;
-    width: 3px;
-    height: 3px;
-    top:-8px;
-    left: -75px;
-    border-radius: 50%;
-}
 .wraper{
     position: relative;
     width: 15%;
@@ -222,11 +164,6 @@ a{
     
 }
 
-.bton{
-    align-items: center;
-    position: relative;
-    
-}
 #rk img{
     border-radius: 5px;
     height: 20px;
@@ -272,36 +209,7 @@ a{
 #prodimg img{
       height: 80px;
 }
-#td1 p{
-   background-color: silver;
-   border-radius: 45px;
-    width: 30%;
-    text-align: center;
-}
-#td2 p{
-    background-color: silver;
-    border-radius: 45px;
-    width: 30%;
-    text-align: center;
- }
- #td3 p{
-    background-color: silver;
-    border-radius: 45px;
-    width: 30%;
-    text-align: center;
- }
- #td4 p{
-    background-color: silver;
-    border-radius: 45px;
-    width: 30%;
-    text-align: center;
- }
- #td5 p{
-    background-color: silver;
-    border-radius: 45px;
-    width: 30%;
-    text-align: center;
- }
+
  #left{
      position: absolute;
      left: 2rem;
@@ -1212,8 +1120,8 @@ bottom: 12rem;}
     position: fixed;
 bottom: 12rem;}
    .container{
-       width: 87%;
-       left: 14rem;
+       width: 85%;
+       left: 17rem;
        height: 20rem;
       top: 10rem;
       background-color: #faf8f4;
@@ -1224,7 +1132,7 @@ bottom: 12rem;}
         height: 20rem;
         width: 80rem;
         left: 13.5rem;
-        top: 3rem;
+        top: -1.2rem;
    }
    .kindle{
        top: 70px;
@@ -1233,38 +1141,12 @@ bottom: 12rem;}
    .boku{
     position:absolute;
   width: 10rem;
-  left: -1rem;
-  top: -5rem;
+  left: 2rem;
+  top: -1rem;
   height: 2rem;
   text-align: center;
   text-size-adjust: 2px;
 }
-    #td1 img{
-        height:200px;
-         border-radius: 20px;
-         margin-right: 50px;   
-         }
-    #td2 img{
-        height:200px;
-         border-radius: 20px;
-         margin-right: 50px;
-    
-    } 
-    #td3 img{
-        height:200px;
-         border-radius: 20px;
-         margin-right: 50px;
-    }
-    #td4 img{
-        height:200px;
-         border-radius: 20px;
-         margin-right: 50px;
-    }
-    #td5 img{
-        height:200px;
-         border-radius: 20px;
-         margin-right: 50px;
-    }
     .authors{
         position: absolute;
         left: 70rem;
@@ -1287,81 +1169,15 @@ bottom: 12rem;}
         border-radius: 50%;
         padding: 10px;
     }
-    #td1{
-        position: relative;
-        top: 2rem ;
-    }
-    #td2{
-        position: relative;
-        left: 7rem;
-        top:2rem;
-    }
-    #td3{
-        position: relative;
-        left: 14rem;
-        top: 2rem;
-    }
-    #td4{
-        position: relative;
-        left: 21rem;
-        top: 2rem;
-    }
-    #td5{
-        position: relative;
-        left: 28rem;
-        top: 2rem;
-    }
     .lasstWrapper{
         position: fixed;
         bottom: 56rem;
     }
     .lstred{
         top: 8rem;
+        left: 18rem;
     }
-}
 
-.flip-card-back {
-    background-color:blue;
-    width: 20rem;
-    transform: rotateY(180deg);
-  }
-  .flip-card-front {
-    background-color: #bbb;
-    color: black;
-  }
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }  
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
-  h3{
-      color: black;
-  }
-  .flip-card{
-    width: 10em;
-    background-color: green;
-  }
-  .badge {
-    background-color: red;
-    color: white;
-    padding: 4px 8px;
-    text-align: center;
-    border-radius: 5px;
-  }
   .cotainer1{
       
       height: 32rem;
@@ -1521,6 +1337,6 @@ top: 1rem;
 .doneBtn5{
     display: none;
 }
-
+  }
 
 
