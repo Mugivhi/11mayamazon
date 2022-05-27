@@ -268,11 +268,33 @@ let maxScroll = -sCont.offsetWidth + hScroll.offsetWidth;
      mbtnn3.style.display='inline-block';
      dbtnn3.style.display='inline-block';
  })
- let crt=document.querySelector('cart');
- let trly=document.querySelector('fa-solid fa-cart-shopping');
- trly.addEventListener('click',()=>{
-    crt.style.display='inline-block'; 
- })
-//  function viewCart(){
+//  let crt=document.querySelector('cart');
+//  let trly=document.querySelector('fa-solid fa-cart-shopping');
+//  trly.addEventListener('click',()=>{
+//     crt.style.display='inline-block'; 
+//  })
+// //  function viewCart(){
 
 //  }
+let viewCrt=document.querySelector(".viewcrt");
+ let crt= previewContainer.querySelectorAll('.cart');
+ crt.forEach(open=>{
+    open.querySelector(".fa-cart-shopping").onclick=()=>{
+        open.classList.add('');
+        previewContainer.style.display="inline-block";
+    }
+
+});
+// Remove Items From Cart
+$('a.remove').click(function(){
+    event.preventDefault();
+    $( this ).parent().parent().parent().hide( 400 );
+   
+  })
+  
+  // Just for testing, show all items
+    $('a.btn.continue').click(function(){
+      $('li.items').show(400);
+    })
+  
+    
