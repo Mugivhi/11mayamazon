@@ -134,11 +134,18 @@ let maxScroll = -sCont.offsetWidth + hScroll.offsetWidth;
  let pbtn=document.querySelector('.plusBtn');
  let dbtn=document.querySelector('.doneBtn');
  let trolley=document.querySelector('.fa-solid');
+ let spn=document.querySelector('.spna');
+ let count=0;
+ function donebutton(){
+     count+=1;
+     document.getElementById('spna').innerHTML=count;
+     console.log(count);
+ }
  btn.addEventListener("click",()=>{
      if( btn.innerText=="ADD TO CART")
      btn.innerText =1;
      pbtn.style.display='inline-block';
-     mbtn.style.display='inline-block';
+     mbtn.style.display='none';
      dbtn.style.display='inline-block';
 
  })
@@ -158,7 +165,7 @@ let maxScroll = -sCont.offsetWidth + hScroll.offsetWidth;
      dbtn.style.display='inline-block';
  })
  dbtn.addEventListener('click',()=>{
-     trolley.style.display(btn.innerText);
+    //  trolley.style.display(btn.innerText);
  })
  let btnn=document.querySelector('.mainBtn2');
  let mbtnn=document.querySelector('.minusBtn2');
@@ -167,7 +174,7 @@ let maxScroll = -sCont.offsetWidth + hScroll.offsetWidth;
  btnn.addEventListener("click",()=>{
      btnn.innerText =1;
      pbtnn.style.display='inline-block';
-     mbtnn.style.display='inline-block';
+     mbtnn.style.display='none';
      dbtnn.style.display='inline-block';
 
  })
@@ -193,7 +200,7 @@ let maxScroll = -sCont.offsetWidth + hScroll.offsetWidth;
  btnn1.addEventListener("click",()=>{
      btnn1.innerText =1;
      pbtnn1.style.display='inline-block';
-     mbtnn1.style.display='inline-block';
+     mbtnn1.style.display='none';
      dbtnn1.style.display='inline-block';
 
  })
@@ -218,7 +225,7 @@ let maxScroll = -sCont.offsetWidth + hScroll.offsetWidth;
  btnn2.addEventListener("click",()=>{
      btnn2.innerText =1;
      pbtnn2.style.display='inline-block';
-     mbtnn2.style.display='inline-block';
+     mbtnn2.style.display='none';
      dbtnn2.style.display='inline-block';
 
  })
@@ -243,7 +250,7 @@ let maxScroll = -sCont.offsetWidth + hScroll.offsetWidth;
  btnn3.addEventListener("click",()=>{
      btnn3.innerText =1;
      pbtnn3.style.display='inline-block';
-     mbtnn3.style.display='inline-block';
+     mbtnn3.style.display='none';
      dbtnn3.style.display='inline-block';
 
  })
@@ -261,3 +268,11 @@ let maxScroll = -sCont.offsetWidth + hScroll.offsetWidth;
      mbtnn3.style.display='inline-block';
      dbtnn3.style.display='inline-block';
  })
+ let crt=document.querySelector('cart');
+ let trly=document.querySelector('fa-solid fa-cart-shopping');
+ trly.addEventListener('click',()=>{
+    crt.style.display='inline-block'; 
+ })
+//  function viewCart(){
+
+//  }

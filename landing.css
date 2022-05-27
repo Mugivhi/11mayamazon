@@ -1285,11 +1285,6 @@ transform: rotate(45deg);
 .product-prev .preview .buttons a .cart :hover{
 color: #111;
 }
-.trolley i{
-position: absolute;
-left:35rem;
-top: 1rem;
-}
 .product-prev .preview .buttons button:hover{
     transform: scale(1.1);
 }.plusBtn{
@@ -1336,6 +1331,25 @@ top: 1rem;
 }
 .doneBtn5{
     display: none;
+}
+.cart{
+    display: none;
+}
+.gariki{
+    left: 1rem;
+    
+    position: relative;
+    top: 1rem;
+    background-color: blue;
+    height: 10rem;
+}
+.gariki button .trolley i{
+ height: 10rem;
+ color: green;
+ width: 10rem;
+}
+.gariki button .trolley i .fa-solid{
+    color: green;
 }
   }
 

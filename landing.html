@@ -16,6 +16,7 @@
         <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
         <script src="https://kit.fontawesome.com/b705362230.js" crossorigin="anonymous"></script>
+        </head>
     <body onload="addEvents()">
         <header>
 
@@ -49,8 +50,11 @@
                 <h3><b>new release</b></h3>
             </font>
             </div>
-            <div class="trolley">
-        <i class="fa-solid fa-cart-shopping"></i>
+            <!-- <div class="trolley" onclick="viewCart()">
+        <<i class="fa-solid fa-cart-shopping"  onclick="viewCart()"></i>
+        </div> -->
+        <div class="gariki">
+            <button class="trolley"><i class="fa-solid fa-cart-shopping" ></i></button>
         </div>
             <div id="ftured">
                <font size="-4"><h3><b>featured</b> </h3></font>
@@ -330,7 +334,7 @@
           <button class="minusBtn">-</button>
           <button class="mainBtn">ADD TO CART<i class="fa-solid fa-cart-shopping"></i></button>
           <button class="plusBtn">+</button>
-          <button onclick="donebutton()" class="doneBtn">done!</button>
+          <button class="doneBtn" onclick="donebutton()" >done!</button>
         </div>
     </div>
     <div class="preview "  data-target="p-2">
@@ -407,7 +411,7 @@
             <button class="minusBtn4">-</button>
           <button class="mainBtn4">ADD TO CART<i class="fa-solid fa-cart-shopping"></i></button>
           <button class="plusBtn4">+</button>
-          <button class="doneBtn4">done!</button>
+          <button class="doneBtn4" type="button" name="button" id="doneBtn" onclick="cot()">done!</button>
         </div>
     </div>
     <div class="preview " data-target="p-5">
@@ -477,6 +481,22 @@
             </table>
         </div>
             </div>
+            <section class="cart">
+                <table>
+                    <thead class="thead">
+                        <tr>
+                            <th colspan="2">item</th>
+                            <th>price</th>
+                            <th colspan="2">quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                        <tr class="totalRow">
+                            <td colspan="5">total: R0.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
         </main>
         <footer>
  <script src="./script.js"></script>
