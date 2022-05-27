@@ -3,13 +3,23 @@
 <head>
 	<title>Shopping Cart</title>
 	<link rel="stylesheet" type="text/css" href="cart.css">
+    <script src="./script.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,900" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/b705362230.js" crossorigin="anonymous"></script>
 </head>
 <body>
    <div class="CartContainer">
    	   <div class="Header">
    	   	<h3 class="Heading">Shopping Cart</h3>
-   	   	<h5 class="Action">Remove all</h5>
+              <button type="button" name="button" class="bathene">Remove all</button>
+   	   	<!-- <h5 class="Action">Remove all</h5> -->
    	   </div>
 
    	   <div class="Cart-Items">
@@ -18,6 +28,11 @@
    	   	  </div>
    	   	  <div class="about">
    	   	  	<h1 class="title">she prays</h1>
+                    <div class="button">
+                        <button id="decrement" onclick="decrease()">-</button>
+                        <input type="text" value="0" id="input">
+                        <button id="increment" onclick="increase()">+</button>
+                      </div>
    	   	  	<h3 class="subtitle"></h3>
    	   	  	<img src="./tools/IMG-20220508-WA0126.jpg"  height="30px"/>
    	   	  </div>
@@ -26,8 +41,9 @@
    	   	  </div>
    	   	  <div class="prices">
    	   	  	<div class="amount">R500</div>
-   	   	  	<div class="save"><u>Save for later</u></div>
-   	   	  	<div class="remove"><u>Remove</u></div>
+   	   	  	<!-- <div class="save"><u>Save for later</u></div> -->
+   	   	  	<!-- <div class="remove"><u>Remove</u></div> -->
+                    <button type="button" name="button" class="bathene">Remove</button>
    	   	  </div>
    	   </div>
 
@@ -37,6 +53,11 @@
    	   	  </div>
    	   	  <div class="about">
    	   	  	<h1 class="title">book of god</h1>
+                    <div class="button">
+                        <button id="decrement1" onclick="decreasen()">-</button>
+                        <input type="text" value="0" id="input">
+                        <button id="increment1" onclick="increasen()">+</button>
+                      </div>
    	   	  	<h3 class="subtitle"></h3>
    	   	  	<img src="./tools/IMG-20220508-WA0128.jpg"  height="30px"/>
    	   	  </div>
@@ -45,8 +66,9 @@
    	   	  </div>
    	   	  <div class="prices">
    	   	  	<div class="amount">R500</div>
-   	   	  	<div class="save"><u>Save for later</u></div>
-   	   	  	<div class="remove"><u>Remove</u></div>
+   	   	  	<!-- <div class="save"><u>Save for later</u></div> -->
+   	   	  	<!-- <div class="remove"><u>Remove</u></div> -->
+                    <button type="button" name="button" class="bathene">Remove</button>
    	   	  </div>
    	   </div>
    	 <hr> 
@@ -58,7 +80,26 @@
    	 	</div>
    	 	<div class="total-amount">R500</div>
    	 </div>
-   	 <button class="button">Checkout</button></div>
+   	 <button class="button">Checkout<i class="fa-solid fa-cart-shopping" ></i></button></div>
    </div>
+   <script>
+       let dcrmnt=document.getElementById('decrement');
+       let incrmnt=document.getElementById('increment')
+       var input=document.getElementById("input");
+        function increase(){
+            input.value=eval(input.value)+1
+        }
+        function decrease(){
+            input.value=eval(input.value)-1
+            if(input.value<=1){
+                dcrmnt.style.display="none"
+            }
+           else{
+                dcrmnt.style.display="inline-block"
+            }
+        }
+    
+
+   </script>
 </body>
 </html>
