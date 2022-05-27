@@ -1332,10 +1332,10 @@ color: #111;
 .doneBtn5{
     display: none;
 }
-.cart{
+/* .cart{
     display: none;
-}
-.gariki{
+} */
+/* .gariki{
     left: 1rem;
     
     position: relative;
@@ -1343,14 +1343,29 @@ color: #111;
     background-color: blue;
     height: 10rem;
 }
-.gariki button .trolley i{
+.gariki button.trolley i{
  height: 10rem;
  color: green;
  width: 10rem;
 }
 .gariki button .trolley i .fa-solid{
     color: green;
+} */
+.trolley{
+    position: relative;
+    top: -1.5rem;
+    left: 34rem;
 }
+.fa-cart-shopping{
+    font-size: 1.5rem;
+    color: blue;
+
+}
+ /* a .fa-cart-shopping:hover{
+    transition:scale(0.9);
+} */
+
   }
+
 
 
