@@ -136,11 +136,6 @@ let maxScroll = -sCont.offsetWidth + hScroll.offsetWidth;
  let trolley=document.querySelector('.fa-solid');
  let spn=document.querySelector('.spna');
  let count=0;
- function donebutton(){
-     count+=1;
-     document.getElementById('spna').innerHTML=count;
-     console.log(count);
- }
  btn.addEventListener("click",()=>{
      if( btn.innerText=="ADD TO CART")
      btn.innerText =1;
@@ -164,9 +159,7 @@ let maxScroll = -sCont.offsetWidth + hScroll.offsetWidth;
      mbtn.style.display='inline-block';
      dbtn.style.display='inline-block';
  })
- dbtn.addEventListener('click',()=>{
-    //  trolley.style.display(btn.innerText);
- })
+
  let btnn=document.querySelector('.mainBtn2');
  let mbtnn=document.querySelector('.minusBtn2');
  let pbtnn=document.querySelector('.plusBtn2');
@@ -285,4 +278,16 @@ let viewCrt=document.querySelector(".viewcrt");
     }
 
 });
-
+let addCart=document.querySelectorAll('mainBtn')
+for(let i=0; i < addCart.length; i++){
+//  console.log(addCart)
+addCart[i].addEventListener('click',()=>{
+    console.log("added to cart");
+})
+}
+function donebutton(){
+    var addbtn=document.querySelectorAll('mainBtn').innerText
+ for(let i=0;i<addbtn.length;i++){
+    console.log
+ }
+}

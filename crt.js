@@ -1,6 +1,6 @@
 if(document.readyState=='loading'){
     document.addEventListener('DOMcontentLoaded' ,ready)
-    updateCartTotal()
+    // updateCartTotal()
 }
 else{
     ready()
@@ -67,4 +67,4 @@ updateCartTotal()
                updateCartTotal()
            })
         }
-         
+          
