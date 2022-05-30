@@ -46,6 +46,21 @@ body{
 .bathene:hover{
 	background-color:#888;
 }
+.bathene1{
+	font-size: 14px;
+	font-family: 'Open Sans';
+	font-weight: 600;
+	color: #E44C4C;
+	cursor: pointer;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	background: transparent;
+	border-bottom: 1px solid #E44C4C;
+}
+.bathene1:hover{
+	background-color:#888;
+}
 
 /* .Action{
 	font-size: 14px;
@@ -196,4 +211,7 @@ hr{
 }
 input{
 	width: 3rem;
+}
+.late-display{
+    display:none;
 }
