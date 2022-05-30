@@ -1,6 +1,6 @@
 if(document.readyState=='loading'){
     document.addEventListener('DOMcontentLoaded' ,ready)
-
+    updateCartTotal()
 }
 else{
     ready()
@@ -41,7 +41,7 @@ updateCartTotal()
             // console.log(priceElement, qntElement)
             var price= parseFloat(priceElement.innerText.replace('R',''))
             var quantity=qntElement.value
-            total=total+(price*quantity)
+            total=total+(quantity*price)
         }
         total=Math.round(total*100)/100
         document.getElementsByClassName('total-amount')[0].innerText="R"+total
@@ -57,19 +57,4 @@ updateCartTotal()
                updateCartTotal()
            })
         }
-        function updateCartTotal(){
-            var cartItem=document.getElementsByClassName('Cart-Items')[0]
-            var crtRows=cartItem.getElementsByClassName('prices')
-            var total=0
-            for(var i=0; i<crtRows.length; i++){
-                var crtRows=crtRows[i]
-                var priceElement=crtRows.getElementsByClassName('amount')[0]
-                var qntElement=crtRows.getElementsByClassName('cart-quantity')[0]
-                console.log(priceElement, qntElement)
-                var price= parseFloat(priceElement.innerText.replace('R',''))
-                var quantity=qntElement.value
-                total=total+(price*quantity)
-            }
-            document.getElementsByClassName('total-amount')[0].innerText="R"+total
-           
-        }
+         
