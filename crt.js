@@ -17,6 +17,11 @@ function ready(){
            var input=quantityInputs[i]
            input.addEventListener('change',quantityChanged)
        }
+        var addTo= document.getElementsByClassName('doneBtn')
+        for(var i = 0;i < addTo .length; i++){
+            var button= addTo[i]
+            button.addEventListener('click',addToCartClicked)
+        }
     }
 function removeCartItem(event){
     var buttonClicked=event.target
@@ -30,6 +35,11 @@ if(isNaN(input.value)||input.value<=0){
 }
 updateCartTotal()
 }
+ function  addToCartClicked(event){
+     var button=event.target
+     var shopItem=button.parentElement.parentElement
+     var title= shopItem.getElementsByClassName()
+ }
     function updateCartTotal(){
         var cartItem=document.getElementsByClassName('Cart-Items')[0]
         var crtRows=cartItem.getElementsByClassName('prices')
