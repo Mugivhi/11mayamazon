@@ -7,7 +7,8 @@
             landing page
         </title>
         <link rel="stylesheet" href="landing.css">
-       
+        <link rel="stylesheet" href="./cart.css">
+        <script src="./crt.js" async></script>
         <!-- <script src="./script.js"></script> -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,7 +53,8 @@
             </font>
             </div>
             <div class="trolley" onclick="viewCart()">
-       <a href="cart.html"><i class="fa-solid fa-cart-shopping"  onclick="viewCart()"></i></a>
+                <h1><i class=" fa fa-shopping-cart"></i></h1>
+       <!-- <a href="cart.html"><i class="fa-solid fa-cart-shopping"  onclick="viewCart()"></i></a> -->
         </div>
         <!-- <div class="gariki">
         <button class="trolley"><i class="fa-solid fa-cart-shopping" ></i></button> -->
@@ -311,12 +313,14 @@
         </div>
     </div>
     </div>
-    <div class="product-prev">
-        <div class="preview "  data-target="p-1">
+    </div>
+    <!-- <div class="product-prev"> -->
+        <!-- <div class="preview "  data-target="p-1">
             <i class="fas fa-times"></i>
             <span class=" shop-item"></span>
-        <img src="./tools/IMG-20220508-WA0126.jpg" alt="">
-      
+        <img class="shop-item-image" src="./tools/IMG-20220508-WA0126.jpg" alt="">
+        <br>
+        <span class="shop-item-title">she prays</span>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -331,18 +335,19 @@
         <p>With a warm and engaging style, this popular author, speaker, and women's ministry leader invites women 
             on a 31-day prayer journey to believe what God says about himself--and about them.. We desire to
               grow in prayer, but we don't know where to begin, what to say, or how to listen for his voice.</p>
-        <div class="price">R500</div>
+        <span class="shop-item-price">R12.99</span>
         <div class="buttons">
           <button class="minusBtn">-</button>
-          <button class="mainBtn" onclick="addedtocart()">ADD TO CART<i class="fa-solid fa-cart-shopping"></i></button>
+          <button class="mainBtn">ADD TO CART<i class="fa-solid fa-cart-shopping"></i></button>
           <button class="plusBtn">+</button>
-          <button class="doneBtn" onclick="donebutton()" value="done!" >done</button>
+          <button class="doneBtn" onclick='addItemToCart()' value="done!" >done</button>
         </div>
     </div>
     <div class="preview "  data-target="p-2">
         <i class="fas fa-times"></i>
-        <img src="./tools/IMG-20220508-WA0124.jpg" alt="">
-        <h3>panic room</h3>
+        <img class="shop-item-image" src="./tools/IMG-20220508-WA0124.jpg" alt="">
+        <br>
+        <span class="shop-item-title">panic room</span>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -356,18 +361,19 @@
         </h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quibusdam, eligendi unde distinctio quas harum 
             consequatur perferendis omnis. Libero laboriosam illo debitis quaerat sapiente quas accusamus ipsa. Id, sequi nemo?</p>
-        <div class="price">R500</div>
+            <span class="shop-item-price">R12.99</span>
         <div class="buttons">
             <button class="minusBtn2">-</button>
-            <button class="mainBtn">ADD TO CART<i class="fa-solid fa-cart-shopping"></i></button>
+            <button class="mainBtn2">ADD TO CART<i class="fa-solid fa-cart-shopping"></i></button>
             <button class="plusBtn2">+</button>
             <button class="doneBtn2">done!</button>
         </div>
     </div>
     <div class="preview "  data-target="p-3">
         <i class="fas fa-times"></i>
-        <img src="./tools/IMG-20220508-WA0125.jpg" alt="">
-        <h3>know your why</h3>
+        <img class="shop-item-image" src="./tools/IMG-20220508-WA0125.jpg" alt="">
+        <br>
+        <span class="shop-item-title">know your why</span>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -382,10 +388,10 @@
         <p>This is an important and timely book. In a world of seemingly endless options,
              discerning the voice of God can be an increasingly difficult task. Ken draws on decades of 
              experience to help Christians cut through the confusion and distractions and live lives in tune with God."</p>
-        <div class="price">R500</div>
+             <span class="shop-item-price">R12.99</span>
         <div class="buttons">
             <button class="minusBtn3">-</button>
-            <button class="mainBtn">ADD TO CART<i class="fa-solid fa-cart-shopping"></i></button>
+            <button class="mainBtn3">ADD TO CART<i class="fa-solid fa-cart-shopping"></i></button>
             <button class="plusBtn3">+</button>
             <button class="doneBtn3">done!</button>
         </div>
@@ -393,7 +399,8 @@
     <div class="preview "  data-target="p-4">
         <i class="fas fa-times"></i>
         <img src="./tools/IMG-20220508-WA0127.jpg" alt="">
-        <h3>book of god</h3>
+        <br>
+        <span class="shop-item-title">book of god</span>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -408,10 +415,10 @@
         <p>Walter Wangerin Jr. brings the characters, places, and events of scripture to life in this narrative rendering of the entire Bible.
             Master storyteller Walter Wangerin Jr. shares the story of the Bible from beginning to end as you've never read it before,
              retold with exciting detail and passionate energy.</p>
-        <div class="price">R500</div>
+             <span class="shop-item-price">R12.99</span>
         <div class="buttons">
             <button class="minusBtn4">-</button>
-          <button class="mainBtn">ADD TO CART<i class="fa-solid fa-cart-shopping"></i></button>
+          <button class="mainBtn4">ADD TO CART<i class="fa-solid fa-cart-shopping"></i></button>
           <button class="plusBtn4">+</button>
           <button class="doneBtn4" type="button" name="button" id="doneBtn" onclick="cot()">done!</button>
         </div>
@@ -419,7 +426,8 @@
     <div class="preview " data-target="p-5">
         <i class="fas fa-times"></i>
         <img src="./tools/IMG-20220508-WA0128.jpg" alt="">
-        <h3>higher is waiting</h3>
+        <br>
+        <span class="shop-item-title">hinger is waiting</span>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -436,15 +444,58 @@
             Higher Is Waiting is a spiritual guidebook, a collection of teachings culled 
             from the experiences of a lifetime, meant to inspire readers to climb higher in their own 
             lives and pull themselves up to a better, more fulfilling place.</p>
-        <div class="price">R500</div>
+            <span class="shop-item-price">R12.99</span>
         <div class="buttons">
             <button class="minusBtn5">-</button>
-            <button class="mainBtn">ADD TO CART<i class="fa-solid fa-cart-shopping"></i></button>
+            <button class="mainBtn5">ADD TO CART<i class="fa-solid fa-cart-shopping"></i></button>
             <button class="plusBtn5">+</button>
             <button class="doneBtn5">done!</button>
         </div>
-    </div>
-    </div>
+    </div>-->
+     <div class="product-prev"> 
+	<section>
+		<div class="item"  data-target="p-1">
+			<img src="./tools/IMG-20220508-WA0126.jpg">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quo, modi ea voluptas tempora vero cumque incidunt eum animi</p>
+			<h6>$345.89</h6>
+			<span></span>
+			<button>Add-cart</button>
+			
+		</div>
+		<div class="item2"  data-target="p-2">
+			<img src="./tools/IMG-20220508-WA0124.jpg">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quo, modi ea voluptas tempora vero cumque incidunt eum animi</p>
+			<h6>$345.89</h6>
+			<span></span>
+			<button>Add-cart</button>
+		</div>
+		<div class="item3"  data-target="p-3">
+			<img src="./tools/IMG-20220508-WA0125.jpg">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quo, modi ea voluptas tempora vero cumque incidunt eum animi</p>
+			<h6>$345.89</h6>
+			<span></span>
+			<button>Add-cart</button>
+		</div>
+		<div class="item4"  data-target="p-4">
+			<img src="./tools/IMG-20220508-WA0127.jpg">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quo, modi ea voluptas tempora vero cumque incidunt eum animi</p>
+			<h6>$345.89</h6>
+			<span></span>
+			<button>Add-cart</button>
+		</div>
+        <div class="item5"  data-target="p-5">
+			<img src="./tools/IMG-20220508-WA0128.jpg">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quo, modi ea voluptas tempora vero cumque incidunt eum animi</p>
+			<h6>$345.89</h6>
+			<span></span>
+			<button>Add-cart</button>
+		</div>
+	</section>
+	<div class="select">
+		
+	</div>
+     </div>
+<!-- </div> -->
             <div class="authors">
                 <table>
                     <h3>Famous Authors</h3>
@@ -486,8 +537,43 @@
            
         </main>
         <footer>
- <script src="./script.js"></script>
- <script src="./crt.js" async></script>
         </footer>
+        <script src="./script.js"></script>
+        <script>
+            var noti = document.querySelector('h1');
+	var select = document.querySelector('.select');
+	var button = document.getElementsByTagName('button');
+	for(var but of button){
+		but.addEventListener('click', (e)=>{
+			var add = Number(noti.getAttribute('data-count') || 0);
+			noti.setAttribute('data-count', add +1);
+			noti.classList.add('zero')
+
+			// image --animation to cart ---//
+			var image = e.target.parentNode.parentNode. querySelector('img');
+			var span = e.target.parentNode.parentNode.querySelector('span');
+			var s_image = image.cloneNode(false);
+			span.appendChild(s_image);
+			span.classList.add("active");
+			setTimeout(()=>{
+				span.classList.remove("active");
+				span.removeChild(s_image);
+			}, 500); 
+			
+
+			// copy and paste //
+			var parent = e.target.parentNode.parentNode;
+			var clone = parent.cloneNode(true);
+			select.appendChild(clone);
+			clone.lastElementChild.innerText = "Buy-now";
+			
+			if (clone) {
+				noti.onclick = ()=>{
+					select.classList.toggle('display');
+				}	
+			}
+		})
+	}
+        </script>
     </body>
 </html>

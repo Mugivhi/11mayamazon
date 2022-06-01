@@ -1149,8 +1149,8 @@ bottom: 12rem;}
 }
     .authors{
         position: absolute;
-        left: 70rem;
-        bottom:-5rem;
+        left: 85rem;
+        bottom:2rem;
         align-items: center;
         /* margin-left:300px; */
         background-color: silver;
@@ -1353,8 +1353,8 @@ color: #111;
 } */
 .trolley{
     position: relative;
-    top: -1.5rem;
-    left: 34rem;
+    top: -6.5rem;
+    left: 8rem;
 }
 .fa-cart-shopping{
     font-size: 1.5rem;
@@ -1366,6 +1366,3 @@ color: #111;
 } */
 
   }
-
-
-
